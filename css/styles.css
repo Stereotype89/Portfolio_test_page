@@ -76,6 +76,7 @@ body {
 
 .container {
   width: 100%;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -201,84 +202,20 @@ body {
   background-size: 428px 432px;
 } */
 
-@media screen and (max-width: 768px) {
-  .buttonsect_ {
-    padding-top: 112px;
-    padding-bottom: 112px;
-    width: 428px;
-    height: 432px;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(30, 47, 66, 0.7)
-      ),
-      url("../images/dark-bg.jpg");
-    background-size: 428px 432px;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .effsolutions {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(40 / 36);
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-  }
-  .div-buttonsect_ {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section-one-button {
-    margin-top: 72px;
-  }
-}
-.button-main {
-  font-family: "Roboto", sans-serif;
-  background-color: #4d5ae5;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  border-radius: 4px;
-  text-align: center;
-  padding: 16px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-}
-.button-main:is(:hover, :focus) {
-  background-color: var(--blue_);
-}
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .buttonsect_ {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(30, 47, 66, 0.7)
-      ),
-      url("../images/dark-bg@2x.jpg");
-  }
-}
+/***-------TABLET-STYLES---------***/
 
 @media screen and (min-width: 768px) {
+  /***-----------SECTION-1------------***/
   .buttonsect_ {
     padding-top: 112px;
     padding-bottom: 112px;
-    width: 768px;
-    height: 436px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(30, 47, 66, 0.7)
       ),
       url("../images/dark-bg-tab.jpg");
+    width: 768px;
+    height: 436px;
     background-size: 768px 436px;
     margin-left: auto;
     margin-right: auto;
@@ -335,10 +272,14 @@ body {
         rgba(30, 47, 66, 0.7)
       ),
       url("../images/dark-bg-tab@2x.jpg");
+    width: 768px;
+    height: 436px;
+    background-size: 768px 436px;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  /***-----------SECTION-1------------***/
   .buttonsect_ {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -381,41 +322,19 @@ body {
 
 /***-----------Section2-INDEX.HTML-------------***/
 
-.section-two {
-  padding: 120px 0;
-}
-
-.list {
-  gap: 24px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.li-section-two {
+/* .li-section-two {
   width: 264px;
-}
-
-.list-item {
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-}
+} */
 
 .main-p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-align: left;
+  /* text-align: center; */
 }
 
-.link-main-icon {
+/* .link-main-icon {
   box-sizing: border-box;
   height: 112px;
   display: flex;
@@ -424,7 +343,7 @@ body {
   background: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-}
+} */
 
 /**------------Section3 -INDEX.HTML---------**/
 
@@ -451,17 +370,31 @@ body {
   gap: 24px;
   margin-top: 72px;
 }
+.list-item {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+
+  transition-timing-function: var(--timing-function);
+}
 
 /***---------Section4 -INDEX.HTML--------***/
 
 .our-team {
-  padding: 120px 0;
+  /* padding: 120px 0; */
   background-color: #f4f4fd;
 }
 
 .section-four-item {
   align-items: center;
-  padding: 32px 0 32px 0;
+  padding: 32px 16px;
 }
 
 .title-section-four {
@@ -469,7 +402,6 @@ body {
 }
 
 .list-uorteam {
-  align-items: center;
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -496,8 +428,7 @@ body {
 
 .section-four-icon {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
   margin-top: 8px;
 }
 .li-icon {
@@ -527,8 +458,8 @@ body {
 /** Section-5 **/
 
 .section-five {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 .customers {
   margin-bottom: 72px;
@@ -546,12 +477,15 @@ body {
 .link-section-five {
   box-sizing: border-box;
   height: 88px;
-  width: 168px;
+  width: 190px;
   border: 1px solid #8e8f99;
   border-radius: 5px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
   fill: #8e8f99;
   transition-property: fill, border-colo;
   transition-duration: 250ms;
@@ -1055,4 +989,163 @@ body {
 .privacy {
   color: var(--blue);
   margin-top: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  /***-----------SECTION-1------------***/
+  .buttonsect_ {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    width: 428px;
+    height: 432px;
+    background-size: 428px 432px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(30, 47, 66, 0.7)
+      ),
+      url("../images/dark-bg.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .effsolutions {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+  .div-buttonsect_ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-one-button {
+    margin-top: 72px;
+  }
+
+  .button-main {
+    font-family: "Roboto", sans-serif;
+    background-color: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+  }
+  .button-main:is(:hover, :focus) {
+    background-color: var(--blue_);
+  }
+
+  .main-p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  /***-----------SECTION-2------------***/
+  .div-section-two {
+    width: 428px;
+    padding-bottom: 96px;
+  }
+  .main-icon {
+    visibility: hidden;
+  }
+  .div-section-two {
+  }
+
+  /***-----------SECTION-3------------***/
+  .section-three {
+    display: none;
+  }
+  /***-----------SECTION-4------------***/
+  .div-section-four {
+    width: 100%;
+  }
+  .list-uorteam {
+    margin-bottom: 72px;
+  }
+  .our-team {
+    min-width: 428px;
+    padding: 96px 0;
+    background-color: #f4f4fd;
+  }
+  .section-four-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-ourteam {
+  }
+
+  .section-four-icon {
+    display: flex;
+    gap: 24px;
+  }
+
+  /***-----------SECTION-5------------***/
+  .section-five div {
+  }
+
+  .list-section-five {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .container {
+    width: 426px;
+  }
+
+  /** FOOTER */
+  .footer-b {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .div-ftr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-ftr .footer-container {
+    margin-right: 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .buttonsect_ {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(30, 47, 66, 0.7)
+        ),
+        url("../images/dark-bg@2x.jpg");
+      width: 856px;
+      height: 864px;
+      background-size: 856px 864px;
+    }
+  }
 }
