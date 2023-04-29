@@ -30,6 +30,7 @@
           <a class="logo link" href="./index.html"
             >Web<span class="logo-span">Studio</span></a
           >
+
           <ul class="list nav-list">
             <li>
               <a href="./index.html" class="link item line active">Studio</a>
@@ -57,12 +58,69 @@
             </li>
           </ul>
         </address>
+
+        <!-- ------------ MOBILE-MENU---------- -->
+        <button tupe="button" class="open-mob-menu" data-menu-open>
+          <svg class="icon-mob-menu" width="29.54" height="18.62">
+            <use href="./images/icons.svg#icon-mob_menu"></use>
+          </svg>
+        </button>
+        <div class="mobile_menu" data-menu>
+          <div class="container mobile_menu_container">
+            <button class="mobile-close-btn" data-menu-close>
+              <svg class="mobile-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <ul class="list list-mobile">
+              <li class="mobile-items">Studio</li>
+              <li class="mobile-items">Portfolio</li>
+              <li class="mobile-items">Contacts</li>
+            </ul>
+
+            <div class="contacts_bottom">
+              <ul class="list list-mobile-contacts">
+                <li>+11 (000) 111-11-11</li>
+                <li>info@devstudio.com</li>
+              </ul>
+
+              <ul class="section-four-icon list">
+                <li class="li-icon">
+                  <a href="" class="link-item link">
+                    <svg class="soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-instagram2"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="li-icon">
+                  <a href="" class="link-item"
+                    ><svg class="soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-twitter1"></use></svg
+                  ></a>
+                </li>
+                <li class="li-icon">
+                  <a href="" class="link-item"
+                    ><svg class="soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-facebook1"></use></svg
+                  ></a>
+                </li>
+                <li class="li-icon">
+                  <a href="" class="link-item"
+                    ><svg class="soc-icon" width="16" height="16">
+                      <use href="./images/icons.svg#icon-linkedin1"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
- 
-<!-------------MOB_MENY------------->
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <!-------------MOB_MENY------------->
+
+    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
           fill="currentColor"
@@ -85,7 +143,6 @@
         <li><a href="" class="link">Contacts</a></li>
         <li><a href="" class="link">+11 (000) 111-11-11</a></li>
         <li><a href="" class="link">info@devstudio.com</a></li>
-
       </ul>
     </div>
 
@@ -94,8 +151,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
-    ></script>
-
+    ></script> -->
 
     <!--section1-->
     <main class="main-section">
@@ -609,41 +665,6 @@
         </form>
       </div>
     </div>
-
-    <!-- -----------MOB-MENY------------ -->
-
-    <div class="container">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-
-        <ul class="menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
-        </ul>
-      </div>
-    </header>
-
-   
-    
 
     <script src="./js/modal.js"></script>
     <script defer src="js/mobile-menu.js"></script>
