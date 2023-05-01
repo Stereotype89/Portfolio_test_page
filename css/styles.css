@@ -1340,7 +1340,6 @@ body {
   }
   /**---------Section2----------*/
   .div-section-two {
-    /* max-width: 428px; */
   }
   .section-2-container {
   }
@@ -1359,6 +1358,14 @@ body {
     flex-wrap: wrap; */
   }
   .main-p {
+    max-width: 356px;
+  }
+
+  .div-section-two > ul {
+    gap: 72px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 
   /***-------------Section-4---------- */
@@ -1573,6 +1580,9 @@ body {
     transition-duration: 250ms;
   }
 
+  .div-section-two > ul {
+    gap: 24px;
+  }
   /***---------FOOTER----------- */
 
   .container {
