@@ -1132,9 +1132,13 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 72px 16px;
+    max-width: 396px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .item-section-five {
     margin-bottom: 0;
+    max-width: 190px;
   }
   .item-mr0 {
     margin-bottom: 0;
@@ -1339,11 +1343,8 @@ body {
     background-color: var(--blue_);
   }
   /**---------Section2----------*/
-  .div-section-two {
-  }
-  .section-2-container {
-  }
-  .div-list-item {
+  .link-section-five {
+    width: 168px;
   }
 
   .div-section-two {
@@ -1378,6 +1379,12 @@ body {
     flex-wrap: wrap;
     gap: 64px 24px;
   }
+  .list-section-five {
+    max-width: 552px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 72px 24px;
+  }
 }
 
 /***-------------FOOTER---------- */
@@ -1411,8 +1418,10 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 72px 24px;
-    max-width: 625px;
+    max-width: 574px;
   }
   .footer-container {
     display: flex;
@@ -1422,6 +1431,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    justify-content: flex-start;
+    padding-bottom: 28px;
   }
   .div-subscribe-footer {
     display: flex;
@@ -1583,6 +1594,9 @@ body {
   .div-section-two > ul {
     gap: 24px;
   }
+  .list-section-five {
+    max-width: 1128px;
+  }
   /***---------FOOTER----------- */
 
   .container {
@@ -1628,6 +1642,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    text-align: left;
   }
 
   .footer-social {
@@ -1652,6 +1667,7 @@ body {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
+    text-align: left;
   }
 
   .footer-social .footer-icon-list .li-icon .link-item:is(:hover, :focus) {
@@ -1664,7 +1680,6 @@ body {
 
   .div-subscribe-footer {
     display: flex;
-    flex-direction: row;
   }
 
   .subscribe-footer {
@@ -1675,6 +1690,7 @@ body {
     letter-spacing: 0.02em;
     color: #ffffff;
     margin-bottom: 16px;
+    justify-content: left;
   }
 
   .footer-input {
@@ -1733,8 +1749,8 @@ body {
   .div-ftr {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 }
