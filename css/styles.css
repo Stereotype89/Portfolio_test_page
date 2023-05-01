@@ -183,24 +183,6 @@ body {
   background-color: var(--blue);
 }
 
-/**--Section1 -INDEX.HTML--*/
-
-/* .buttonsect_ {
-  width: 428px;
-  height: 432px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(30, 47, 66, 0.7)
-    ),
-    url(../images/dark-bg.jpg); 
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 428px 432px;
-} */
-
 /***-----------Section2-INDEX.HTML-------------***/
 
 .main-p {
@@ -215,9 +197,6 @@ body {
 .section-three {
   padding-bottom: 120px;
   color: #2e2f42;
-}
-
-.div-section-three {
 }
 
 .activity {
@@ -246,7 +225,6 @@ body {
   color: #2e2f42;
   transition-property: color, background-color;
   transition-duration: 250ms;
-
   transition-timing-function: var(--timing-function);
 }
 
@@ -294,10 +272,12 @@ body {
   display: flex;
   margin-top: 8px;
 }
+
 .li-icon {
   width: 40px;
   height: 40px;
 }
+
 .link-item {
   width: 100%;
   height: 100%;
@@ -502,7 +482,6 @@ body {
 }
 
 /***-----------PORTFOLIO-----------***/
-/*header*/
 
 .div-portfolio {
   padding: 32px 0 32px 16px;
@@ -881,16 +860,17 @@ body {
   }
 
   /*** ------------MOB-MENU----------- */
+
   .mob-container {
     max-width: 428px;
     min-height: 100%;
     margin-right: auto;
     margin-left: auto;
-
     padding-top: 80px;
     padding-bottom: 40px;
     padding-left: 40px;
   }
+
   .icon-mob-menu {
     stroke: #2e2f42;
     fill: #ffffff;
@@ -899,6 +879,7 @@ body {
     border: none;
     line-height: 0;
   }
+
   .open-mob-menu {
     line-height: 0;
   }
@@ -979,6 +960,7 @@ body {
     color: #434455;
     transition-duration: 250ms;
   }
+
   .link_2 {
     font-style: normal;
     font-weight: 500;
@@ -987,6 +969,7 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
   }
+
   .mobile_menu_container {
     position: relative;
     display: flex;
@@ -1001,6 +984,7 @@ body {
   .link_2:is(:hover, :focus) {
     color: var(--blue);
   }
+
   .list-mobile-contacts {
     display: flex;
     flex-direction: column;
@@ -1013,6 +997,7 @@ body {
   }
 
   /***-----------SECTION-1------------***/
+
   .buttonsect_ {
     padding-top: 112px;
     padding-bottom: 112px;
@@ -1062,6 +1047,7 @@ body {
     transition-property: color, background-color;
     transition-duration: 250ms;
   }
+
   .button-main:is(:hover, :focus) {
     background-color: var(--blue_);
   }
@@ -1078,13 +1064,16 @@ body {
   }
 
   /***-----------SECTION-2------------***/
+
   .section-two {
     padding-bottom: 96px;
     padding-top: 96px;
   }
+
   .div-section-two {
     max-width: 428px;
   }
+
   .div-section-two > ul {
     display: flex;
     flex-direction: row;
@@ -1100,20 +1089,25 @@ body {
   }
 
   /***-----------SECTION-3------------***/
+
   .section-three {
     display: none;
   }
+
   /***-----------SECTION-4------------***/
+
   .div-section-four {
     width: 100%;
   }
+
   .list-uorteam {
   }
+
   .our-team {
-    /* min-width: 428px; */
     padding: 96px 0;
     background-color: #f4f4fd;
   }
+
   .section-four-list {
     display: flex;
     justify-content: space-around;
@@ -1136,10 +1130,12 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
+
   .item-section-five {
     margin-bottom: 0;
     max-width: 190px;
   }
+
   .item-mr0 {
     margin-bottom: 0;
   }
@@ -1163,18 +1159,19 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
   .footer-container {
     margin-bottom: 72px;
     margin-right: 0;
   }
+
   .footer-social {
     margin-right: 0;
     margin-bottom: 72px;
   }
+
   .div-subscribe-footer {
     margin-right: 0;
-  }
-  .div-button-subscribe {
   }
 
   /***-----------MODAL_WINDOW----------***/
@@ -1192,16 +1189,19 @@ body {
     font-size: 29px;
   }
 }
+
 @media screen and (min-width: 320px) and (max-width: 428px) {
   .footer-input {
     min-width: calc(100vw - 30px);
   }
 }
+
 @media screen and (min-width: 429px) and (max-width: 768px) {
   .footer-input {
     width: 398px;
   }
 }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .footer-b {
     padding-top: 96px;
@@ -1210,12 +1210,6 @@ body {
   }
   .button-subscribe {
     margin-top: 16px;
-  }
-}
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .container {
-    /* max-width: 440px; */
   }
 }
 
@@ -1521,6 +1515,7 @@ body {
   } */
   .section-two {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
   /* .div-section-two > ul {
     display: flex;
@@ -1539,6 +1534,10 @@ body {
 
   .li-section-two {
     width: 264px;
+  }
+
+  .section-three {
+    display: flex;
   }
 
   .list-item {
