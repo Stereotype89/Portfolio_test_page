@@ -81,16 +81,6 @@ body {
 }
 
 /* -------------HEADER---------------- */
-.nav-list,
-.nav-box,
-.header-box,
-.cont .address-list,
-.div-buttonsect_,
-.effsolutions .section-one-button,
-.list-activity {
-  /* display: flex;
-  align-items: center; */
-}
 
 .header-cont {
   padding: 24px 0;
@@ -218,9 +208,9 @@ body {
   margin-bottom: 8px;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
   line-height: 40px;
   text-align: center;
+  text-overflow: unset;
   letter-spacing: 0.02em;
   color: #2e2f42;
   transition-property: color, background-color;
@@ -491,15 +481,6 @@ body {
   border: 1px solid #e7e9fc;
 }
 
-.li-solid:nth-child(4),
-.li-solid:nth-child(5),
-.li-solid:nth-child(6),
-.li-solid:nth-child(7),
-.li-solid:nth-child(8),
-.li-solid:nth-child(9) {
-  margin-top: 25px;
-}
-
 .li-solid:is(:hover, :focus) {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -546,6 +527,7 @@ body {
   flex-wrap: wrap;
   order: 3;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -1098,9 +1080,6 @@ body {
 
   .div-section-four {
     width: 100%;
-  }
-
-  .list-uorteam {
   }
 
   .our-team {
